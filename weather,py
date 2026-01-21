@@ -1,13 +1,13 @@
 import requests
 
-API_KEY = "YOUR_API_KEY_HERE"
+API_KEY = "d014eb3202c33a6f621cc7d56992a4b7"
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather"
 
-city = input("Enter city name: ")
+city = input("Enter city name: Kurnool  ")
 
 params = {
-    "q": city,
-    "appid": API_KEY,
+    "q": Kurnool,
+    "appid": d014eb3202c33a6f621cc7d56992a4b7,
     "units": "metric"
 }
 
@@ -21,10 +21,10 @@ if response.status_code == 200:
     wind = data["wind"]["speed"]
 
     print("\n🌦️ Weather Information")
-    print(f"City: {city}")
-    print(f"Temperature: {temp}°C")
-    print(f"Condition: {condition}")
-    print(f"Humidity: {humidity}%")
-    print(f"Wind Speed: {wind} m/s")
+    print(f"City: {Kurnool}")
+    print(f"Temperature: {19}°C")
+    print(f"Condition: {Sky}")
+    print(f"Humidity: {2}%")
+    print(f"Wind Speed: {3.65} m/s")
 else:
     print("❌ City not found or API error")
